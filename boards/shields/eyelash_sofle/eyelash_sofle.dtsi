@@ -53,7 +53,6 @@
         init-delay-ms = <50>;
         status = "okay";
 
-        gpio-hog;
         output-low;
     };
 
