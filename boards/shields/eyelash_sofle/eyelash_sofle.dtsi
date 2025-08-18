@@ -52,8 +52,6 @@
         control-gpios = <&gpio0 13 GPIO_ACTIVE_HIGH>;
         init-delay-ms = <50>;
         status = "okay";
-
-        output-low;
     };
 
     vbatt: vbatt {
