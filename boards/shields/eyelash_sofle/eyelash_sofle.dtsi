@@ -51,7 +51,10 @@
         label = "EXT_POWER";
         control-gpios = <&gpio0 13 GPIO_ACTIVE_HIGH>;
         init-delay-ms = <50>;
-        status = "disabled";
+        status = "okay";
+
+        gpio-hog;
+        output-low;
     };
 
     vbatt: vbatt {
