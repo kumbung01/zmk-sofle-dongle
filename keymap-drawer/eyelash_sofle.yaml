@@ -393,7 +393,7 @@ layers:
 combos:
 - p: [34, 35]
   k: $$mdi:apple-keyboard-option$$
-  l: [SYM1, GAMEC]
+  l: [GAMEC, ' BASE']
 - p: [35, 36]
   k: B
-  l: [SYM1, GAMEC]
+  l: [GAMEC, ' BASE']
