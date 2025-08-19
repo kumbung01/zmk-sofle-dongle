@@ -6,10 +6,10 @@ manifest:
       url-base: https://github.com/GPeye
     - name: tokyo2006
       url-base: https://github.com/tokyo2006
-    - name: englmaxi
-      url-base: https://github.com/englmaxi
-    # - name: kumbung01
-      # url-base: https://github.com/kumbung01
+    # - name: englmaxi
+      # url-base: https://github.com/englmaxi
+    - name: kumbung01
+      url-base: https://github.com/kumbung01
     - name: badjeff
       url-base: https://github.com/badjeff
     - name: nrfconnect
@@ -26,8 +26,8 @@ manifest:
       remote: tokyo2006                          # <---
       revision: micro_spi2  
     - name: zmk-dongle-display
-      remote: englmaxi
-      # remote: kumbung01
+      # remote: englmaxi
+      remote: kumbung01
       revision: main
     - name: zmk-feature-split-esb
       remote: badjeff
