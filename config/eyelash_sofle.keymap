@@ -104,7 +104,7 @@
                 , <&macro_param_2to1>
                 , <&macro_release &kp MACRO_PLACEHOLDER>
                 ;
-        }
+        };
     };
 
     behaviors {
