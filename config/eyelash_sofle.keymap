@@ -82,6 +82,30 @@
             release-after-ms = <1000>;
             quick-release;
         };
+
+        caps_word_mod: caps_word_mod {
+            compatible = "zmk,behavior-caps-word";
+            label = "CAPS_WORD_MOD";
+            #binding-cells = <0>;
+            continue-list = <A B C D E F G H I J K L M N O P Q R S T U V W X Y Z NUMBER_1 NUMBER_2 NUMBER_3 NUMBER_4 NUMBER_5 NUMBER_6 NUMBER_7 NUMBER_8 NUMBER_9 NUMBER_0 UNDERSCORE MINUS>;
+        };
+
+        G_ESC: G_ESC {
+            compatible = "zmk,behavior-hold-tap";
+            label = "G_ESC";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <90>;
+            hold-trigger-key-positions = <0>;
+        };
+
+        SH_CAPS: SH_CAPS {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SH_CAPS";
+            #binding-cells = <0>;
+            bindings = <&skq LSHFT>, <&caps_word_mod>;
+        };
     };
 
     keymap {
@@ -89,11 +113,11 @@
 
         BASE {
             bindings = <
-&kp ESC        &kp N1    &kp N2  &kp N3          &kp N4     &kp N5       &tog 3          &kp N6  &kp N7      &kp N8     &kp N9   &kp N0    &kp BACKSLASH
-&mt LSHFT TAB  &kp Q     &kp W   &kp E           &kp R      &kp T        &tog 5          &kp Y   &kp U       &kp I      &kp O    &kp P     &kp BACKSPACE
-&mo 1          &kp A     &kp S   &kp D           &kp F      &kp G        &kp LEFT_ARROW  &kp H   &kp J       &kp K      &kp L    &kp SEMI  &kp APOS
-&mo 2          &kp Z     &kp X   &kp C           &kp V      &kp B        &none           &kp N   &kp M       &kp COMMA  &kp DOT  &kp FSLH  &kp LCTRL
-&kp LC(F11)    &kp LALT  &mo 5   &kp UNDERSCORE  &kp SPACE  &kp LCTRL    &kp ENTER       &mo 5   &skq LSHFT  &kp ENTER  &mo 4    &kp RGUI
+&kp ESC        &kp N1    &kp N2  &kp N3          &kp N4     &kp N5       &tog 3          &kp N6  &kp N7    &kp N8     &kp N9   &kp N0    &kp BACKSLASH
+&mt LSHFT TAB  &kp Q     &kp W   &kp E           &kp R      &kp T        &tog 5          &kp Y   &kp U     &kp I      &kp O    &kp P     &kp BACKSPACE
+&mo 1          &kp A     &kp S   &kp D           &kp F      &kp G        &kp LEFT_ARROW  &kp H   &kp J     &kp K      &kp L    &kp SEMI  &kp APOS
+&mo 2          &kp Z     &kp X   &kp C           &kp V      &kp B        &none           &kp N   &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp LCTRL
+&kp LC(F11)    &kp LALT  &mo 5   &kp UNDERSCORE  &kp SPACE  &kp LCTRL    &kp ENTER       &mo 5   &SH_CAPS  &kp ENTER  &mo 4    &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -102,11 +126,11 @@
 
         SYM1 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans           &trans         &trans                &trans                 &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp CARET        &kp AMPERSAND  &kp ASTRK             &kp PIPE               &arrow     &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp EXCLAMATION  &kp PLUS       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp TILDE        &kp MINUS      &kp LESS_THAN         &kp GREATER_THAN       &kp FSLH   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans           &caps_word     &trans                &trans                 &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans           &trans          &trans                &trans                 &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp CARET        &kp AMPERSAND   &kp ASTRK             &kp PIPE               &arrow     &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp EXCLAMATION  &kp PLUS        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp TILDE        &kp MINUS       &kp LESS_THAN         &kp GREATER_THAN       &kp FSLH   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans           &caps_word_mod  &trans                &trans                 &trans
             >;
 
             label = "SYM1";
@@ -126,11 +150,11 @@
 
         GAME {
             bindings = <
-&kp GRAVE  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp TAB    &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp A      &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp LSHFT  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &trans  &trans  &kp C   &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&G_ESC GRAVE ESCAPE  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp TAB              &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp A                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp LSHFT            &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans               &trans  &trans  &kp C   &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             label = "GAME";
