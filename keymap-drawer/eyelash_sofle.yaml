@@ -40,7 +40,7 @@ layers:
   - L
   - {t: ;, s: ':'}
   - .
-  - SYM2
+  - '&lm 2 LSHIFT'
   - Z
   - X
   - C
@@ -170,7 +170,7 @@ layers:
   - {t: ']', s: '}'}
   - ':'
   - '"'
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
