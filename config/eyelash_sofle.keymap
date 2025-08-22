@@ -149,11 +149,11 @@
 
         BASE {
             bindings = <
-&kp ESC        &kp N1    &kp N2  &kp N3          &kp N4     &kp N5       &tog 3          &kp N6  &kp N7    &kp N8     &kp N9   &kp N0    &kp BACKSLASH
-&mt LSHFT TAB  &kp Q     &kp W   &kp E           &kp R      &kp T        &tog 5          &kp Y   &kp U     &kp I      &kp O    &kp P     &kp BACKSPACE
-&mo 1          &kp A     &kp S   &kp D           &kp F      &kp G        &kp LEFT_ARROW  &kp H   &kp J     &kp K      &kp L    &kp SEMI  &kp APOS
-&lm 2 LSHIFT   &kp Z     &kp X   &kp C           &kp V      &kp B        &none           &kp N   &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp LCTRL
-&kp LC(F11)    &kp LALT  &mo 5   &kp UNDERSCORE  &kp SPACE  &kp LCTRL    &kp ENTER       &mo 5   &SH_CAPS  &kp ENTER  &mo 4    &kp RGUI
+&kp ESC        &kp N1    &kp N2  &kp N3          &kp N4     &kp N5       &tog 3  &kp N6  &kp N7    &kp N8     &kp N9   &kp N0    &kp BACKSLASH
+&mt LSHFT TAB  &kp Q     &kp W   &kp E           &kp R      &kp T        &tog 5  &kp Y   &kp U     &kp I      &kp O    &kp P     &kp BACKSPACE
+&mo 1          &kp A     &kp S   &kp D           &kp F      &kp G        &none   &kp H   &kp J     &kp K      &kp L    &kp SEMI  &kp APOS
+&lm 2 LSHIFT   &kp Z     &kp X   &kp C           &kp V      &kp B        &none   &kp N   &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp LCTRL
+&kp LC(F11)    &kp LALT  &mo 5   &kp UNDERSCORE  &kp SPACE  &kp LCTRL    &none   &mo 5   &SH_CAPS  &kp ENTER  &mo 4    &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -174,11 +174,11 @@
 
         SYM2 {
             bindings = <
-&trans  &trans             &trans  &trans  &trans  &trans    &trans  &trans           &trans       &trans         &trans           &trans        &trans
-&trans  &trans             &trans  &trans  &trans  &trans    &trans  &trans           &kp PERCENT  &trans         &trans           &arrow2       &trans
-&trans  &trans             &trans  &trans  &trans  &trans    &trans  &kp DOLLAR       &kp HASH     &kp LBKT       &kp RBKT         &kp COLON     &kp DOUBLE_QUOTES
-&trans  &rk LSHIFT DELETE  &trans  &trans  &trans  &trans    &trans  &rk LSHFT GRAVE  &kp AT_SIGN  &kp LBRC       &kp RIGHT_BRACE  &kp QUESTION  &kp FSLH
-&trans  &trans             &trans  &trans  &trans  &trans    &trans  &trans           &trans       &kp LS(ENTER)  &trans           &trans
+&trans  &trans             &trans  &trans  &trans  &trans    &trans  &trans           &trans       &trans          &trans           &trans        &trans
+&trans  &trans             &trans  &trans  &trans  &trans    &trans  &trans           &kp PERCENT  &trans          &trans           &arrow2       &trans
+&trans  &trans             &trans  &trans  &trans  &trans    &trans  &kp DOLLAR       &kp HASH     &rk LBKT LSHFT  &rk RBKT LSHFT   &kp COLON     &kp DOUBLE_QUOTES
+&trans  &rk LSHIFT DELETE  &trans  &trans  &trans  &trans    &trans  &rk LSHFT GRAVE  &kp AT_SIGN  &kp LBRC        &kp RIGHT_BRACE  &kp QUESTION  &trans
+&trans  &trans             &trans  &trans  &trans  &trans    &trans  &trans           &trans       &kp LS(ENTER)   &trans           &trans
             >;
 
             label = "SYM2";
