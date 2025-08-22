@@ -166,8 +166,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - $
   - '#'
-  - '&rk LBKT LSHFT'
-  - '&rk RBKT LSHFT'
+  - '&rk LSHFT LEFT_BRACKET'
+  - '&rk LSHFT RIGHT_BRACKET'
   - ':'
   - '"'
   - {t: '$$mdi:transfer$$', type: trans}
