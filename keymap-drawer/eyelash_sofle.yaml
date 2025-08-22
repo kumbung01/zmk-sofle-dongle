@@ -33,7 +33,7 @@ layers:
   - D
   - F
   - G
-  - $$mdi:arrow-left-bold$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - H
   - J
   - K
@@ -59,7 +59,7 @@ layers:
   - _
   - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-control$$
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - FUNC
   - '&SH_CAPS'
   - {t: '$$mdi:keyboard-return$$', type: enter}
@@ -166,8 +166,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - $
   - '#'
-  - {t: '[', s: '{'}
-  - {t: ']', s: '}'}
+  - '&rk LBKT LSHFT'
+  - '&rk RBKT LSHFT'
   - ':'
   - '"'
   - {t: '$$mdi:transfer$$', type: trans}
@@ -182,7 +182,7 @@ layers:
   - '{'
   - '}'
   - '?'
-  - {t: /, s: '?'}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
