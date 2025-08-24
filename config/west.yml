@@ -30,7 +30,8 @@ manifest:
       remote: kumbung01
       revision: main
     - name: zmk-feature-split-esb
-      remote: badjeff
+      # remote: badjeff
+      remote: kumbung01
       revision: main  
     - name: sdk-nrf
       remote: nrfconnect
