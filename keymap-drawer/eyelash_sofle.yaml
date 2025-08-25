@@ -53,7 +53,7 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - $$mdi:apple-keyboard-control$$
-  - Ctl+F13
+  - Ctl+SCROLLLOCK
   - $$mdi:apple-keyboard-option$$
   - FUNC
   - _
