@@ -247,7 +247,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -393,7 +393,7 @@ layers:
 combos:
 - p: [34, 35]
   k: $$mdi:apple-keyboard-option$$
-  l: [GAME, ' BASE']
+  l: [' BASE']
 - p: [35, 36]
   k: B
-  l: [GAME, ' BASE']
+  l: [' BASE']
