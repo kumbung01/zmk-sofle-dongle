@@ -123,7 +123,7 @@
             compatible = "zmk,behavior-caps-word";
             label = "CAPS_WORD_MOD";
             #binding-cells = <0>;
-            continue-list = <A B C D E F G H I J K L M N O P Q R S T U V W X Y Z NUMBER_1 NUMBER_2 NUMBER_3 NUMBER_4 NUMBER_5 NUMBER_6 NUMBER_7 NUMBER_8 NUMBER_9 NUMBER_0 UNDERSCORE MINUS BSPC>;
+            continue-list = <MINUS UNDERSCORE BSPC>;
         };
 
         G_ESC: G_ESC {
