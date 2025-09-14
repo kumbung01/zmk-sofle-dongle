@@ -38,14 +38,14 @@
         lang {
             bindings = <&kp RALT>;
             key-positions = <34 35>;
-            layers = <3 0>;
+            layers = <0>;
             timeout-ms = <110>;
         };
 
         b_key {
             bindings = <&kp B>;
             key-positions = <35 36>;
-            layers = <3 0>;
+            layers = <0>;
             timeout-ms = <110>;
         };
     };
@@ -190,7 +190,7 @@
 &G_ESC GRAVE ESCAPE  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &kp TAB              &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &kp Q                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp LSHFT            &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp LSHFT            &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &kp RALT
 &trans               &trans  &trans  &kp C   &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
