@@ -115,7 +115,7 @@
             label = "STICKY_KEY_QUICK_RELEASE";
             #binding-cells = <1>;
             bindings = <&kp>;
-            release-after-ms = <400>;
+            release-after-ms = <500>;
             quick-release;
         };
 
