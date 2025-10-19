@@ -32,7 +32,7 @@ manifest:
     - name: zmk-feature-split-esb
       # remote: badjeff
       remote: kumbung01
-      revision: main  
+      revision: ringbuf
     - name: sdk-nrf
       remote: nrfconnect
       revision: v2.6.4 # zephyr v3.5.99
