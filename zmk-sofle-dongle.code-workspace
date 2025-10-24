@@ -10,6 +10,21 @@
 			"**/*.rpa": true,
 			"**/*.rpymc": true,
 			"**/cache/": true
+		},
+		"files.associations": {
+			"chrono": "c",
+			"*.inc": "c",
+			"regex": "c",
+			"xlocale": "c",
+			"xstring": "c",
+			"algorithm": "c",
+			"iterator": "c",
+			"xhash": "c",
+			"xmemory": "c",
+			"xtree": "c",
+			"xutility": "c",
+			"array": "c",
+			"vector": "c"
 		}
 	}
 }
