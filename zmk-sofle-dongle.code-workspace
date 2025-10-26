@@ -24,7 +24,17 @@
 			"xtree": "c",
 			"xutility": "c",
 			"array": "c",
-			"vector": "c"
+			"vector": "c",
+			"compare": "c",
+			"functional": "c",
+			"future": "c",
+			"memory": "c",
+			"ratio": "c",
+			"tuple": "c",
+			"type_traits": "c",
+			"utility": "c",
+			"variant": "c",
+			"xtr1common": "c"
 		}
 	}
 }
