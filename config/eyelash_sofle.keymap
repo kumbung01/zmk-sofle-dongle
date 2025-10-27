@@ -61,12 +61,7 @@
         arrow2: arrow2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_release>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp EQUAL &kp GT>;
-
+            bindings = <&kp EQUAL &kp GT>;
             label = "ARROW2";
         };
 
@@ -169,11 +164,11 @@
 
         SYM2 {
             bindings = <
-&trans  &trans             &trans  &trans  &trans  &trans    &trans  &trans           &trans       &trans                  &trans                   &trans        &trans
-&trans  &trans             &trans  &trans  &trans  &trans    &trans  &trans           &kp PERCENT  &trans                  &trans                   &arrow2       &trans
-&trans  &trans             &trans  &trans  &trans  &trans    &trans  &kp DOLLAR       &kp HASH     &rk LSHFT LEFT_BRACKET  &rk LSHFT RIGHT_BRACKET  &kp COLON     &kp DOUBLE_QUOTES
-&trans  &rk LSHIFT DELETE  &trans  &trans  &trans  &trans    &trans  &rk LSHFT GRAVE  &kp AT_SIGN  &kp LBRC                &kp RIGHT_BRACE          &kp QUESTION  &trans
-&trans  &trans             &trans  &trans  &trans  &trans    &trans  &trans           &trans       &kp LS(ENTER)           &trans                   &trans
+&trans  &trans      &trans  &trans     &trans  &trans    &trans  &trans      &trans       &trans            &trans             &trans        &trans
+&trans  &trans      &trans  &trans     &trans  &trans    &trans  &trans      &kp PERCENT  &trans            &trans             &arrow2       &trans
+&trans  &trans      &trans  &trans     &trans  &trans    &trans  &kp DOLLAR  &kp HASH     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp COLON     &kp DOUBLE_QUOTES
+&trans  &kp DELETE  &trans  &trans     &trans  &trans    &trans  &kp GRAVE   &kp AT_SIGN  &kp LBRC          &kp RIGHT_BRACE    &kp QUESTION  &trans
+&trans  &trans      &trans  &kp LSHFT  &trans  &trans    &trans  &trans      &trans       &kp LS(ENTER)     &trans             &trans
             >;
 
             label = "SYM2";
