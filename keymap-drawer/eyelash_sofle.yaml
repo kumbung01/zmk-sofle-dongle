@@ -166,18 +166,18 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - $
   - '#'
-  - '&rk LSHFT LEFT_BRACKET'
-  - '&rk LSHFT RIGHT_BRACKET'
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
   - ':'
   - '"'
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&rk LSHIFT DELETE'
+  - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&rk LSHFT GRAVE'
+  - {t: '`', s: '~'}
   - '@'
   - '{'
   - '}'
@@ -186,7 +186,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
