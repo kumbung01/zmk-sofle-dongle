@@ -152,11 +152,11 @@
 
         SYM1 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans           &trans          &trans                &trans                 &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp CARET        &kp AMPERSAND   &kp ASTRK             &kp PIPE               &arrow     &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp EXCLAMATION  &kp PLUS        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp TILDE        &kp MINUS       &kp LESS_THAN         &kp GREATER_THAN       &kp FSLH   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans           &caps_word_mod  &trans                &trans                 &trans
+&trans  &trans  &trans  &trans         &trans  &trans    &trans  &trans           &trans          &trans                &trans                 &trans     &trans
+&trans  &trans  &trans  &trans         &trans  &trans    &trans  &kp CARET        &kp AMPERSAND   &kp ASTRK             &kp PIPE               &arrow     &trans
+&trans  &trans  &trans  &trans         &trans  &trans    &trans  &kp EXCLAMATION  &kp PLUS        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL  &trans
+&trans  &trans  &trans  &trans         &trans  &trans    &trans  &kp TILDE        &kp MINUS       &kp LESS_THAN         &kp GREATER_THAN       &kp FSLH   &trans
+&trans  &trans  &trans  &kp LC(SPACE)  &trans  &trans    &trans  &trans           &caps_word_mod  &trans                &trans                 &trans
             >;
 
             label = "SYM1";
