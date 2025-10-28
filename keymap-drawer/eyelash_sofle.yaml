@@ -40,7 +40,7 @@ layers:
   - L
   - {t: ;, s: ':'}
   - .
-  - SYM2
+  - '&lm 2 LSHFT'
   - Z
   - X
   - C
@@ -166,18 +166,18 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - $
   - '#'
-  - {t: '[', s: '{'}
-  - {t: ']', s: '}'}
+  - '&rk LSHFT LEFT_BRACKET'
+  - '&rk LSHFT RIGHT_BRACKET'
   - ':'
   - '"'
-  - {type: held}
-  - $$mdi:backspace-reverse-outline$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - '&rk LSHFT DELETE'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '`', s: '~'}
+  - '&rk LSHFT GRAVE'
   - '@'
   - '{'
   - '}'
@@ -186,13 +186,13 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: 'Sft+$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   GAME:
