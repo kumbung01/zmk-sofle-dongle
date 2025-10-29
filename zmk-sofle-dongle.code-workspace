@@ -44,7 +44,11 @@
 			"format": "c",
 			"sstream": "c",
 			"system_error": "c",
-			"xloctime": "c"
+			"xloctime": "c",
+			"kernel.h": "c",
+			"timeslot.h": "c",
+			"xiosbase": "c",
+			"log.h": "c"
 		}
 	}
 }
