@@ -48,7 +48,12 @@
 			"kernel.h": "c",
 			"timeslot.h": "c",
 			"xiosbase": "c",
-			"log.h": "c"
+			"log.h": "c",
+			"deque": "c",
+			"initializer_list": "c",
+			"list": "c",
+			"queue": "c",
+			"random": "c"
 		}
 	}
 }
