@@ -53,7 +53,9 @@
 			"initializer_list": "c",
 			"list": "c",
 			"queue": "c",
-			"random": "c"
+			"random": "c",
+			"iosfwd": "c",
+			"xlocbuf": "c"
 		}
 	}
 }
