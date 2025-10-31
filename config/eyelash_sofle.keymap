@@ -146,13 +146,6 @@
             #binding-cells = <0>;
             bindings = <&mo 5>, <&tog 5>;
         };
-
-        mouse_scroll: mouse_scroll {
-            compatible = "zmk,behavior-sensor-rotate";
-            label = "MOUSE_SCROLL";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
-        };
     };
 
     keymap {
@@ -181,7 +174,7 @@
             >;
 
             label = "SYM1";
-            sensor-bindings = <&mouse_scroll>;
+            sensor-bindings = <&scroll_encoder>;
         };
 
         SYM2 {
