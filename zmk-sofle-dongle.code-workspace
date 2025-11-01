@@ -55,7 +55,8 @@
 			"queue": "c",
 			"random": "c",
 			"iosfwd": "c",
-			"xlocbuf": "c"
+			"xlocbuf": "c",
+			"mutex": "c"
 		}
 	}
 }
