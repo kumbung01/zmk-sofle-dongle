@@ -29,7 +29,7 @@
         #sensor-binding-cells = <0>;
         bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
 
-        tap-ms = <100>;
+        tap-ms = <20>;
     };
 
     combos {
@@ -146,15 +146,6 @@
             #binding-cells = <0>;
             bindings = <&mo 5>, <&tog 5>;
         };
-
-        mouse_scroll: mouse_scroll {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-
-            tap-ms = <25>;
-            label = "MOUSE_SCROLL";
-        };
     };
 
     keymap {
@@ -183,7 +174,7 @@
             >;
 
             label = "SYM1";
-            sensor-bindings = <&mouse_scroll>;
+            sensor-bindings = <&scroll_encoder>;
         };
 
         SYM2 {
