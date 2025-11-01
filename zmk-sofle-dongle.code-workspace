@@ -56,7 +56,8 @@
 			"random": "c",
 			"iosfwd": "c",
 			"xlocbuf": "c",
-			"mutex": "c"
+			"mutex": "c",
+			"behavior.h": "c"
 		}
 	}
 }
