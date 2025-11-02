@@ -11,12 +11,6 @@
 
 &msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
 
-&msc {
-    acceleration-exponent = <1>;      // 0
-    time-to-max-speed-ms = <100>;       // 300
-    delay-ms = <0>;                   // 0
-};
-
 &mmv {
     time-to-max-speed-ms = <500>;
     acceleration-exponent = <1>;
@@ -28,6 +22,7 @@
         compatible = "zmk,behavior-sensor-rotate";
         #sensor-binding-cells = <0>;
         bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+
         tap-ms = <5>;
     };
 
@@ -145,7 +140,6 @@
             #binding-cells = <0>;
             bindings = <&mo 5>, <&tog 5>;
         };
-
     };
 
     keymap {
