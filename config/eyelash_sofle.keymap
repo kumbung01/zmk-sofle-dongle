@@ -141,9 +141,9 @@
 
         mouse_scroll: mouse_scroll {
             compatible = "zmk,behavior-sensor-rotate";
-            label = "MOUSE_SCROLL";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+            tap-ms = <5>;
         };
     };
 
