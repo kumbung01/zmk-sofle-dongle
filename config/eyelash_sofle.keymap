@@ -24,13 +24,6 @@
 };
 
 / {
-    scroll_encoder: scroll_encoder {
-        compatible = "zmk,behavior-sensor-rotate";
-        #sensor-binding-cells = <0>;
-        bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-
-        tap-ms = <20>;
-    };
 
     combos {
         compatible = "zmk,combos";
@@ -145,6 +138,13 @@
             label = "MO_TG";
             #binding-cells = <0>;
             bindings = <&mo 5>, <&tog 5>;
+        };
+
+        scroll_encoder: scroll_encoder {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+            tap-ms = <20>;
         };
     };
 
