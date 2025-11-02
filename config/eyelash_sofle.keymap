@@ -24,6 +24,13 @@
 };
 
 / {
+    mouse_scroll: mouse_scroll {
+        compatible = "zmk,behavior-sensor-rotate";
+        #sensor-binding-cells = <0>;
+        bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+        tap-ms = <5>;
+    };
+
     combos {
         compatible = "zmk,combos";
 
@@ -139,12 +146,6 @@
             bindings = <&mo 5>, <&tog 5>;
         };
 
-        mouse_scroll: mouse_scroll {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
-            tap-ms = <5>;
-        };
     };
 
     keymap {
