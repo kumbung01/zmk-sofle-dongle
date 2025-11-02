@@ -24,7 +24,6 @@
 };
 
 / {
-
     combos {
         compatible = "zmk,combos";
 
@@ -140,11 +139,11 @@
             bindings = <&mo 5>, <&tog 5>;
         };
 
-        scroll_encoder: scroll_encoder {
+        mouse_scroll: mouse_scroll {
             compatible = "zmk,behavior-sensor-rotate";
+            label = "MOUSE_SCROLL";
             #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-            tap-ms = <20>;
+            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
         };
     };
 
@@ -174,7 +173,7 @@
             >;
 
             label = "SYM1";
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&mouse_scroll>;
         };
 
         SYM2 {
