@@ -57,7 +57,9 @@
 			"iosfwd": "c",
 			"xlocbuf": "c",
 			"mutex": "c",
-			"behavior.h": "c"
+			"behavior.h": "c",
+			"physical_layouts.h": "c",
+			"hwinfo.h": "c"
 		}
 	}
 }
