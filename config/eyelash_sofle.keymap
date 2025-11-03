@@ -18,14 +18,6 @@
 };
 
 / {
-    mouse_scroll: mouse_scroll {
-        compatible = "zmk,behavior-sensor-rotate";
-        #sensor-binding-cells = <0>;
-        bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
-
-        tap-ms = <5>;
-    };
-
     combos {
         compatible = "zmk,combos";
 
@@ -140,6 +132,13 @@
             #binding-cells = <0>;
             bindings = <&mo 5>, <&tog 5>;
         };
+
+        scroll_behavior: scroll_behavior {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "SCROLL_BEHAVIOR";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+        };
     };
 
     keymap {
@@ -168,7 +167,7 @@
             >;
 
             label = "SYM1";
-            sensor-bindings = <&mouse_scroll>;
+            sensor-bindings = <&scroll_behavior>;
         };
 
         SYM2 {
