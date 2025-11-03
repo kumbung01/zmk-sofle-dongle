@@ -17,6 +17,8 @@
     trigger-period-ms = <16>;
 };
 
+&msc { time-to-max-speed-ms = <70>; };
+
 / {
     combos {
         compatible = "zmk,combos";
