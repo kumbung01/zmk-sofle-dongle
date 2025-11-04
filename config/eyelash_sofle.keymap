@@ -27,16 +27,16 @@
             bindings = <&kp RALT>;
             key-positions = <34 35>;
             layers = <0>;
-            timeout-ms = <80>;
-            require-prior-idle-ms = <50>;
+            timeout-ms = <90>;
+            require-prior-idle-ms = <10>;
         };
 
         b_key {
             bindings = <&kp B>;
             key-positions = <35 36>;
             layers = <0>;
-            timeout-ms = <80>;
-            require-prior-idle-ms = <50>;
+            timeout-ms = <90>;
+            require-prior-idle-ms = <10>;
         };
     };
 
@@ -140,6 +140,7 @@
             label = "SCROLL_BEHAVIOR";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+
             tap-ms = <30>;
         };
     };
