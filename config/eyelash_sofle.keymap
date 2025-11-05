@@ -154,7 +154,7 @@
 &kp PAUSE_BREAK  &kp LALT  &mo 5   &kp UNDERSCORE  &kp SPACE  &kp LCTRL    &none   &mo_tg  &skq LSHFT  &kp ENTER  &mo 4    &kp RGUI
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &mouse_scroll SCRL_DOWN SCRL_UP>;
+            sensor-bindings = <&mouse_scroll SCRL_DOWN SCRL_UP>;
             display-name = " BASE";
         };
 
