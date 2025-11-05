@@ -42,5 +42,8 @@ manifest:
       revision: v2.6.4
       repo-path: sdk-nrfxlib
       path: nrfxlib
+    - name: zmk-behivior-custom-caps-word
+      remote: kumbung01
+      revision: main
   self:
     path: config

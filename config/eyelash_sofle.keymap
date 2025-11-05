@@ -104,7 +104,7 @@
         };
 
         caps_word_mod: caps_word_mod {
-            compatible = "zmk,behavior-caps-word";
+            compatible = "zmk,behavior-caps-word-custom";
             label = "CAPS_WORD_MOD";
             #binding-cells = <0>;
             continue-list = <MINUS UNDERSCORE BSPC>;
