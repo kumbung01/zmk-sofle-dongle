@@ -154,7 +154,7 @@
 &kp PAUSE_BREAK  &kp LALT  &mo 5   &kp UNDERSCORE  &kp SPACE  &kp LCTRL    &none   &mo_tg  &skq LSHFT  &kp ENTER  &mo 4    &kp RGUI
             >;
 
-            //sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &mouse_scroll SCRL_DOWN SCRL_UP>;
             display-name = " BASE";
         };
 
@@ -168,7 +168,7 @@
             >;
 
             label = "SYM1";
-            sensor-bindings = <&mouse_scroll>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &mouse_scroll SCRL_DOWN SCRL_UP>;
         };
 
         SYM2 {
