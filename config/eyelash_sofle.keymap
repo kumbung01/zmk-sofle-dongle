@@ -8,7 +8,6 @@
 #include <dt-bindings/zmk/pointing.h>
 
 //&mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
-
 //&msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
 
 &mmv {
@@ -31,7 +30,6 @@
             key-positions = <34 35>;
             layers = <0>;
             timeout-ms = <90>;
-            require-prior-idle-ms = <10>;
         };
 
         b_key {
@@ -39,7 +37,6 @@
             key-positions = <35 36>;
             layers = <0>;
             timeout-ms = <90>;
-            require-prior-idle-ms = <10>;
         };
     };
 
