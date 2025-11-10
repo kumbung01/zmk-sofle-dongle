@@ -338,7 +338,7 @@ layers:
   - F8
   - F9
   - F10
-  - F11
+  - '&func'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -351,7 +351,7 @@ layers:
   - $$mdi:arrow-up-bold$$
   - END
   - $$mdi:volume-high$$
-  - F12
+  - $$mdi:pan-up$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -364,7 +364,7 @@ layers:
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
   - $$mdi:volume-low$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:pan-down$$
   - PRINTSCREEN
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
