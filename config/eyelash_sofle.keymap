@@ -17,7 +17,7 @@
 };
 
 &msc {
-    time-to-max-speed-ms = <300>;
+    time-to-max-speed-ms = <50>;
     acceleration-exponent = <1>;
 };
 
@@ -140,6 +140,15 @@
             #sensor-binding-cells = <2>;
             bindings = <&msc>, <&msc>;
         };
+
+        func: func {
+            compatible = "zmk,behavior-tap-dance";
+            label = "FUNC";
+            #binding-cells = <0>;
+            bindings = <&kp F11>, <&kp F12>;
+
+            tapping-term-ms = <120>;
+        };
     };
 
     keymap {
@@ -168,6 +177,7 @@
             >;
 
             label = "SYM1";
+            sensor-bindings = <&mouse_scroll SCRL_UP SCRL_DOWN>;
         };
 
         SYM2 {
@@ -209,9 +219,9 @@
 
         FUNC {
             bindings = <
-&kp ESCAPE       &kp F1  &kp F2  &kp F3        &kp F4  &kp F5    &trans  &kp F6         &kp F7            &kp F8     &kp F9             &kp F10          &kp F11
-&none            &none   &none   &none         &none   &none     &trans  &none          &kp HOME          &kp UP     &kp END            &kp C_VOLUME_UP  &kp F12
-&trans           &none   &trans  &trans        &trans  &none     &trans  &kp PAGE_UP    &kp LEFT          &kp DOWN   &kp RIGHT          &kp C_VOL_DN     &none
+&kp ESCAPE       &kp F1  &kp F2  &kp F3        &kp F4  &kp F5    &trans  &kp F6         &kp F7            &kp F8     &kp F9             &kp F10          &func
+&none            &none   &none   &none         &none   &none     &trans  &none          &kp HOME          &kp UP     &kp END            &kp C_VOLUME_UP  &msc SCRL_UP
+&trans           &none   &trans  &trans        &trans  &none     &trans  &kp PAGE_UP    &kp LEFT          &kp DOWN   &kp RIGHT          &kp C_VOL_DN     &msc SCRL_DOWN
 &kp PRINTSCREEN  &none   &none   &none         &none   &none     &trans  &kp PAGE_DOWN  &kp LEFT_BRACKET  &none      &kp RIGHT_BRACKET  &kp LEFT_ALT     &kp LCTRL
 &trans           &trans  &trans  &kp LEFT_GUI  &trans  &trans    &trans  &trans         &kp ESCAPE        &kp ENTER  &kp SPACE          &kp LEFT_GUI
             >;
