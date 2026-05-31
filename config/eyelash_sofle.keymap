@@ -100,7 +100,7 @@
         };
 
         caps_word_mod: caps_word_mod {
-            compatible = "zmk,behavior-caps-word-custom";
+            compatible = "zmk,behavior-caps-word";
             #binding-cells = <0>;
             continue-list = <MINUS UNDERSCORE BSPC>;
         };
@@ -121,10 +121,17 @@
             bindings = <&skq LSHFT>, <&caps_word_mod>;
         };
 
+        tog_nolock: tog_nolock {
+            compatible = "zmk,behavior-toggle-layer";
+            #binding-cells = <1>;
+            display-name = "Toggle No Locking";
+            /delete-property/ locking;
+        };
+
         mo_tg: mo_tg {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            bindings = <&mo 5>, <&tog 5>;
+            bindings = <&mo 5>, <&tog_nolock 5>;
         };
 
         mouse_scroll: sensor_scroll {
@@ -155,7 +162,7 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
-            display-name = " BASE";
+            display-name = "BASE";
         };
 
         SYM1 {
@@ -168,7 +175,7 @@
             >;
 
             display-name = "SYM1";
-            sensor-bindings = <&mouse_scroll SCRL_UP SCRL_DOWN>;
+            //sensor-bindings = <&mouse_scroll SCRL_UP SCRL_DOWN>;
         };
 
         SYM2 {
