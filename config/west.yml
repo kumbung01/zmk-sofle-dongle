@@ -26,5 +26,8 @@ manifest:
       revision: v3.1-branch
       repo-path: sdk-nrfxlib
       path: nrfxlib
+    - name: prospector-zmk-module                 # <--- and these
+      remote: kumbung01                          # <---
+      revision: feat/new-status-screens           # <---
   self:
     path: config
