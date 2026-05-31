@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: eyelash_sofle}
 layers:
-  ' BASE':
+  BASE:
   - $$mdi:keyboard-esc$$
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
@@ -393,7 +393,7 @@ layers:
 combos:
 - p: [34, 35]
   k: $$mdi:apple-keyboard-option$$
-  l: [' BASE']
+  l: [BASE]
 - p: [35, 36]
   k: B
-  l: [' BASE']
+  l: [BASE]
