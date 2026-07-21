@@ -13,5 +13,5 @@ include:
     # snippet: zmk-usb-logging
     artifact-name: eyelash_sofle_right
   - board: nice_nano@2.0.0//zmk
-    shield: settings_reset
+    shield: eyelash_sofle_peripheral_left settings_reset
     artifact-name: eyelash_sofle_reset
