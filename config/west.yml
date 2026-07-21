@@ -12,6 +12,9 @@ manifest:
     # - name: zmk-behivior-custom-caps-word
     #   remote: kumbung01
     #   revision: main
+    - name: zmk-behavior-keepalive
+      remote: kumbung01
+      revision: main
     - name: zmk-dongle-display
       remote: englmaxi
       revision: main

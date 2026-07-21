@@ -91,6 +91,12 @@
     };
 
     behaviors {
+        KA: keepalive {
+            compatible = "zmk,behavior-keepalive";
+            #binding-cells = <0>;
+            broadcast-period-ms = <5000>;
+        };
+
         skq: sticky_key_quick_release {
             compatible = "zmk,behavior-sticky-key";
             #binding-cells = <1>;
